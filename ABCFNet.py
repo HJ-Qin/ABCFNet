@@ -1,5 +1,3 @@
-# 这是 加了aspp  加了边界 后的版本
-
 import torch.nn.functional as F
 from torch.nn import Module, Conv2d, Parameter, Softmax
 from torchvision.models import resnet
