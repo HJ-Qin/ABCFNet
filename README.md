@@ -1,5 +1,3 @@
-## The ABCFNet code will be open-sourced soon.
-
 # Adaptive Boundary Enhancement and Cross Fusion Linear self-Attention Network for Semantic Segmentation of Remote Sensing Images
 
 
