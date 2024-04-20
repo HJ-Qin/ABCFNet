@@ -5,11 +5,11 @@ import torch
 from torchvision import models
 from torch import nn
 
-from netss.BesAspp import BES_Module
+from netss.BesAspp import MFA_Module
 from functools import partial
 
 # from netss.DeConv2d import DeformConv2d as DFconv
-from netss.BE_Module import BE_Model
+from netss.BE_Module import ABE_Model
 nonlinearity = partial(F.relu, inplace=True)
 
 
@@ -221,8 +221,8 @@ class ABCFNet(nn.Module):
         self.finalconv3 = nn.Conv2d(32, num_classes, 3, padding=1)
 
 
-        self.be_model = BE_Model(2048,64,256,256)
-        self.bes_model = BES_Module()
+        self.be_model = ABE_Model(2048,64,256,256)
+        self.bes_model = MFA_Module()
 
     def forward(self, x):
         # Encoder
