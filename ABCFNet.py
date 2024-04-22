@@ -256,20 +256,14 @@ class ABCFNet(nn.Module):
         out = self.finalconv2(out)
         out = self.finalrelu2(out)
         out = self.finalconv3(out)
-
-
+        
         return out
 
 
-
-from torchstat import stat
-
 if __name__ == '__main__':
-
     num_classes = 7
     in_batch, inchannel, in_h, in_w = 2, 3, 512, 512
     x = torch.randn(in_batch, inchannel, in_h, in_w)
     net = ABCFNet(3, num_classes)
     out = net(x)
-    stat(net, (3, 512, 512))
     print(out.shape)
