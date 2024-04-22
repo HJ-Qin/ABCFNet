@@ -46,21 +46,7 @@ class ASPP_Module(nn.Module):
         conv3x3_2 = self.branch3(x)
 
         conv3x3_3 = self.branch4(x)
-
-        # -----------------------------------------#
-        #   第五个分支，全局平均池化 + 卷积
-        # -----------------------------------------#
-        # global_feature = torch.mean(x, 2, True)
-        # global_feature = torch.mean(global_feature, 3, True)
-        # global_feature = self.branch5_conv(global_feature)
-        # global_feature = self.branch5_bn(global_feature)
-        # global_feature = self.branch5_relu(global_feature)
-        # global_feature = F.interpolate(global_feature, (row, col), None, 'bilinear', True)
-
-        # -----------------------------------------#
-        #   将五个分支的内容堆叠起来
-        #   然后1x1卷积整合特征。
-        # -----------------------------------------#
+        
         feature_cat = torch.cat([conv3x3_1, conv3x3_2, conv3x3_3], dim=1)
         result = self.conv_cat(feature_cat)
 
