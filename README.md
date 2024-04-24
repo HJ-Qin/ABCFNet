@@ -22,3 +22,30 @@ cuda >= 11.7.1
 Data sets are available from https://www.isprs.org/education/benchmarks/UrbanSemLab/2d-sem-label-potsdam.aspx
 
 
+
+## Results of visualization
+
+#### Visualization of the potsdam datasets
+
+![image-20240424161433071](images/image-20240424161433071.png)
+
+
+
+#### Visualization of the Vaihingen datasets
+
+![visualofVaihingen](images/visualofVaihingen.png)
+
+
+
+#### Visualization of heatmaps
+
+![image-20240424160716886](images/image-20240424160716886.png)
+
+
+
+#### Visualization of Boundary
+
+![image-20240424160907236](images/image-20240424160907236.png)
+
+![image-20240424160920777](images/image-20240424160920777.png)
+
