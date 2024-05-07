@@ -1,4 +1,4 @@
-# Adaptive Boundary Enhancement and Cross Fusion Linear self-Attention Network for Semantic Segmentation of Remote Sensing Images
+# ABCFNet: Boundary-Enhanced and Dimension Cross Attention Network for Segmentation of Remote Sensing Images
 
 
 
