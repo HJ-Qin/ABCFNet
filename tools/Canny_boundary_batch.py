@@ -15,7 +15,7 @@ output_folder = "/Users/qintongxue/PycharmProjects/deep-learning-for-image-proce
 
 model = MANet(num_classes=7)  # 请替换为你的语义分割模型实例化代码
 weights_dict = torch.load(
-    r"/Users/qintongxue/PycharmProjects/deep-learning-for-image-processing-master/pytorch_segmentation/deeplabv3-plus-pytorch-main/logs/new_ours_Potsdam-epoch300-best_epoch_weights.pth11",
+    r"/Users/qintongxue/PycharmProjects/deep-learning-for-image-processing-master/pytorch_segmentation/deeplabv3-plus-pytorch-main/logs/new_ours_Potsdam-epoch200-best_epoch_weights.pth11",
     map_location=torch.device('cpu'))
 model.load_state_dict(weights_dict, strict=False)  # 请替换为你的模型权重文件路径
 
